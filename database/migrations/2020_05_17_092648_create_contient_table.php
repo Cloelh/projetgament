@@ -15,8 +15,8 @@ class CreateContientTable extends Migration
     {
         Schema::create('contient', function (Blueprint $table) {
             $table->id();
-            $table->decimal('idIngredient');
-            $table->decimal('idRecette');
+            $table->integer('idIngredient');
+            $table->integer('idRecette');
             $table->string('quantité');
         });
     }

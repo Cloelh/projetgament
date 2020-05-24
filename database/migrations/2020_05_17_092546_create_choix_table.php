@@ -15,9 +15,9 @@ class CreateChoixTable extends Migration
     {
         Schema::create('choix', function (Blueprint $table) {
             $table->id();
-            $table->decimal('idUser');
-            $table->decimal('semaine');
-            $table->decimal('idRecette');
+            $table->integer('idUser');
+            $table->integer('semaine');
+            $table->integer('idRecette');
         });
     }
 

@@ -15,7 +15,7 @@ class CreateAvisTable extends Migration
     {
         Schema::create('avis', function (Blueprint $table) {
             $table->id();
-            $table->decimal('idUser');
+            $table->integer('idUser');
             $table->integer('vote');
             $table->string('description');
         });

@@ -15,9 +15,9 @@ class CreateAbonnementTable extends Migration
     {
         Schema::create('abonnement', function (Blueprint $table) {
             $table->id();
-            $table->decimal('idUser');
-            $table->decimal('nb_personne');
-            $table->decimal('nb_repas');
+            $table->integer('idUser');
+            $table->integer('nb_personne');
+            $table->integer('nb_repas');
         });
     }
 

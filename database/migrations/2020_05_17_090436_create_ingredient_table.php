@@ -17,7 +17,7 @@ class CreateIngredientTable extends Migration
             $table->id();
             $table->string('nom');
             $table->string('img', 1000);
-            $table->decimal('legumes');
+            $table->integer('legumes');
         });
     }
 
